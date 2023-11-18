@@ -3,6 +3,8 @@ package twitter;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import twitter.health.TemplateHealthCheck;
+import twitter.resources.HelloWorldResource;
 
 public class twitterApplication extends Application<twitterConfiguration> {
 
@@ -23,7 +25,16 @@ public class twitterApplication extends Application<twitterConfiguration> {
     @Override
     public void run(final twitterConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
+        
+        HelloWorldResource resource = new HelloWorldResource(
+                configuration.getTemplate(),
+                configuration.getDefaultName()
+        );
+        environment.jersey().register(resource);
+
+
+        TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());
+        environment.healthChecks().register("template", healthCheck);
     }
 
 }
