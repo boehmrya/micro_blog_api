@@ -1,0 +1,5 @@
+twitter/twitterConfiguration.class
+twitter/api/Saying.class
+twitter/twitterApplication.class
+twitter/resources/HelloWorldResource.class
+twitter/health/TemplateHealthCheck.class

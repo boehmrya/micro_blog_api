@@ -1,5 +1,5 @@
-/Users/ryan/Desktop/java_personal_projects/twitter/src/main/java/twitter/health/TemplateHealthCheck.java
-/Users/ryan/Desktop/java_personal_projects/twitter/src/main/java/twitter/api/Saying.java
-/Users/ryan/Desktop/java_personal_projects/twitter/src/main/java/twitter/twitterApplication.java
-/Users/ryan/Desktop/java_personal_projects/twitter/src/main/java/twitter/twitterConfiguration.java
-/Users/ryan/Desktop/java_personal_projects/twitter/src/main/java/twitter/resources/HelloWorldResource.java
+/Users/ryan/Desktop/personal_projects/micro_blog_api/src/main/java/twitter/health/TemplateHealthCheck.java
+/Users/ryan/Desktop/personal_projects/micro_blog_api/src/main/java/twitter/twitterApplication.java
+/Users/ryan/Desktop/personal_projects/micro_blog_api/src/main/java/twitter/api/Saying.java
+/Users/ryan/Desktop/personal_projects/micro_blog_api/src/main/java/twitter/resources/HelloWorldResource.java
+/Users/ryan/Desktop/personal_projects/micro_blog_api/src/main/java/twitter/twitterConfiguration.java
