@@ -2,16 +2,15 @@ package twitter.model;
 import java.time.LocalDateTime;
 
 public class Tweet {
+    private int id;
     private String text;
     private LocalDateTime createdDate;
     private Integer authorId;
 
     public Tweet() {}
 
-    public Tweet(String text, LocalDateTime createdDate, Integer authorId) {
-        this.text = text;
-        this.createdDate = createdDate;
-        this.authorId = authorId;
+    public int getId() {
+        return id;
     }
 
     public String getText() {
@@ -24,6 +23,10 @@ public class Tweet {
 
     public Integer getAuthorId() {
         return authorId;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setText(String text) {
