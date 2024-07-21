@@ -1,7 +1,9 @@
 package twitter.db.dao;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
+import org.jdbi.v3.sqlobject.statement.Bind;
+import twitter.model.Tweet;
 
 public interface tweetsDAO {
-    @SqlQuery("SELECT * FROM your_table WHERE id = :id")
-    YourEntity findEntityById(@Bind("id") int id);
+    @SqlQuery("SELECT * FROM tweets WHERE id = :id")
+    Tweet findTweetById(@Bind("id") int id);
 }

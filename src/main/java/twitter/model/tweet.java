@@ -6,6 +6,8 @@ public class Tweet {
     private LocalDateTime createdDate;
     private Integer authorId;
 
+    public Tweet() {}
+
     public Tweet(String text, LocalDateTime createdDate, Integer authorId) {
         this.text = text;
         this.createdDate = createdDate;
